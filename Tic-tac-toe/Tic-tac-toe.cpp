@@ -43,9 +43,9 @@ void receiveInput(int array[3][3]) {
     do {
         cout << "Please enter the symbol you want to place:" << endl;
         cin >> symbol;
-    } while (symbol != 'X' && symbol != 'O');
+    } while (symbol != 'X' && symbol != 'O' && symbol != 'x' && symbol != 'o');
 
-    if (symbol == 'X') { array[row][column] = 11; }
+    if (symbol == 'X' || symbol == 'x') { array[row][column] = 11; }
     else { array[row][column] = 10; }
 }
 
